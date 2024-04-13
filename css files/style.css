@@ -1,3 +1,9 @@
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+  }
 .switch
 {
     position: relative;
@@ -62,4 +68,66 @@
 @keyframes slide-up-sun {
     0% { transform: translateY(-30px); opacity: 0; }
     100% { transform: translateY(0); opacity: 1; }
+}
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn
+{
+    width: 60px;
+    background-image: url(/images/Russia-Flag-icon.png);
+    background-repeat: no-repeat;
+    cursor:pointer;
+    position: relative;
+}
+
+.dropbtn::after
+{
+    content:"";
+    background: rgba(0, 0, 0, 0) url(/images/745173.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    position: absolute;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+}
+.dropdown-content
+{
+    display: none;  
+    position: absolute;
+    flex-direction: column;
+    background-color: #e8e6e6;
+    width: 60px;
+}
+.dropdown-content button {
+    color: black;
+    padding: 2px 0 2px 25px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out;
+    border: 0px;
+    cursor: pointer;
+}
+.dropdown-content a:hover
+{
+    background-color: #f1f1f1;
+}
+.dropdown-content button:first-child
+{
+  background: url(/images/Russia-Flag-icon.png) no-repeat left center;
+}
+.dropdown-content button:last-child
+{
+  background: url(/images/flag-usa-icon.png) no-repeat left center;
+}
+.header-container
+{
+    height: 947px;
+    width: 100%;
+    background-image:url(/images/фон.jpg);
+    background-position:center center;
+    background-repeat:no-repeat;
+
 }
