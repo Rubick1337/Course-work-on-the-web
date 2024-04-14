@@ -1,237 +1,210 @@
 body {
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0;
-    overflow-x: hidden;
-  }
-.buttons
-{
-    display: flex;
-    align-items: center;
-    margin-left: 28px;
-    gap: 22px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
 }
-.switch
-{
-    position: relative;
-    display: inline-block;
-    width: 96px;
-    height: 36px;
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+  gap: 22px;
 }
-.switch-input
-{
-    display: none;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 96px;
+  height: 36px;
 }
-.switch-slider
-{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;    
-    right: 0;
-    cursor:pointer;
-    background-color: #fff;
-    transition: 0.3s ease background-color;
-    border-radius:56px;
-    transition: 0.4s ease-in-out  ;
+.switch-input {
+  display: none;
 }
-.switch-slider::before
-{
-    content:"";
-    position: absolute;
-    top: 2px;
-    left: 9px;
-    width: 32px;
-    height: 32px;
-    background-color: #fafd0f;
-    border-radius: 50%;
-    animation: slide-up-sun 700ms ease-in-out forwards;
+.switch-slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: #fff;
+  transition: 0.3s ease background-color;
+  border-radius: 56px;
+  transition: 0.4s ease-in-out;
 }
-.switch-input:focus + .switch-slider
-{
-    box-shadow: 0 0 3px #000;
+.switch-slider::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 32px;
+  height: 32px;
+  background-color: #fafd0f;
+  border-radius: 50%;
+  animation: slide-up-sun 700ms ease-in-out forwards;
 }
-.switch-input:checked + .switch-slider
-{
-    background-color:#000;
+.switch-input:focus + .switch-slider {
+  box-shadow: 0 0 3px #000;
 }
-.switch-input:checked + .switch-slider::before
-{
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 52px;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    box-shadow: 6px 2px 1px 5px white;
-    border-radius: 50%;
-    animation: slide-up-moon 700ms
+.switch-input:checked + .switch-slider {
+  background-color: #000;
 }
-.dropdown
-{
-    position: relative;
-    display: inline-block;
+.switch-input:checked + .switch-slider::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 52px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  box-shadow: 6px 2px 1px 5px white;
+  border-radius: 50%;
+  animation: slide-up-moon 700ms;
 }
-.dropbtn
-{
-    width: 73px;
-    height: 24px;
-    background-image: url(/images/Russia-Flag-icon.png);
-    background-repeat: no-repeat;
-    cursor:pointer;
-    position: relative;
-    border:none;
-    background-position:left;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-.dropbtn::after
-{
-    content:"";
-    background: rgba(0, 0, 0, 0) url(/images/745173.png);
-    background-repeat:no-repeat;
-    background-position:center center;
-    position: absolute;
-    top: 5px;
-    right: -2px;
-    width: 16px;
-    height: 16px;
+.dropbtn {
+  width: 73px;
+  height: 24px;
+  background-image: url(/images/Russia-Flag-icon.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background-position: left;
 }
-.dropdown-content
-{
-    display: none;  
-    position: absolute;
-    flex-direction: column;
-    background-color: #e8e6e6;
-    width: 73px;
+.dropbtn::after {
+  content: "";
+  background: rgba(0, 0, 0, 0) url(/images/745173.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 5px;
+  right: -2px;
+  width: 16px;
+  height: 16px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background-color: #e8e6e6;
+  width: 73px;
 }
 .dropdown-content button {
-    color: black;
-    padding: 2px 0 2px 25px;
-    text-decoration: none;
-    transition: background-color 0.5s ease-in-out;
-    border: 0px;
-    cursor: pointer;
+  color: black;
+  padding: 2px 0 2px 25px;
+  text-decoration: none;
+  transition: background-color 0.5s ease-in-out;
+  border: 0px;
+  cursor: pointer;
 }
-.dropdown-content button:first-child
-{
+.dropdown-content button:first-child {
   background: url(/images/Russia-Flag-icon.png) no-repeat left center;
 }
-.dropdown-content button:last-child
-{
+.dropdown-content button:last-child {
   background: url(/images/flag-usa-icon.png) no-repeat left center;
 }
-.header-container
-{
-    height: 947px;
-    width: 100%;
-    background-image:url(/images/фон.jpg);
+.header-container {
+  height: 947px;
+  width: 100%;
+  background-image: url(/images/фон.jpg);
 }
-.background-settings
-{
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size: cover;
+.background-settings {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.img-profile
-{
-    margin-right: 107px;
-    width: 48px;
-    height: 48px;
-    background-image:url(/images/icon_profile.svg)
+.img-profile {
+  margin-right: 107px;
+  width: 48px;
+  height: 48px;
+  background-image: url(/images/icon_profile.svg);
 }
-.img-logo
-{
-    margin-right: 62px;
-    width: 182px;
-    height: 51px;
-    background-image:url(/images/лого1.svg)
+.img-logo {
+  margin-right: 62px;
+  width: 182px;
+  height: 51px;
+  background-image: url(/images/лого1.svg);
 }
-.menu
-{
-    position: relative;
-    width: 100%;
-    height: 170px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 1s ease-in-out;
+.menu {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 1s ease-in-out;
 }
 .navigation {
-    position: absolute;
-    left: 34%;
-    bottom: 0%;
-    display: flex;
-  }
-  .navigation ul {
-    display: flex;
-    align-items: flex-start;
-    gap: 24px;
-    list-style-type: none;
-    margin-block: 0;
-    padding-inline-start: 0;
-  }
-  .Text-header
-  {
-    margin-top: 84px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .consultation
-  {
-    margin-top: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  .header-btn{
-    display: block;
-    color:#fff;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    transition: background 0.5s ease-in-out;
-    position: relative;
-
+  position: absolute;
+  left: 34%;
+  bottom: 0%;
+  display: flex;
 }
-.header-btn::after{
-    display: inline-block;
-    content: url(/images/Arrow3.svg) ;
-    padding: 40px 0 0 27px;
+.navigation ul {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  list-style-type: none;
+  margin-block: 0;
+  padding-inline-start: 0;
 }
-.header-btn:hover{
- background: #A9A32A;
+.Text-header {
+  margin-top: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-.instagram-img
-{
-    width: 29.52px;
-    height: 32.36px;
-    background-image:url(/images/instagram.svg)
+.consultation {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.telegram-img
-{
-    width: 30px;
-    height: 24.12px;
-    background-image:url(/images/telegram.svg)
+.header-btn {
+  display: block;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  transition: background 0.5s ease-in-out;
+  position: relative;
 }
-.whats-up-img
-{
-    width: 29.52px;
-    height: 32.36px;
-    background-image:url(/images/whatsapp.svg)
+.header-btn::after {
+  display: inline-block;
+  content: url(/images/Arrow3.svg);
+  padding: 40px 0 0 27px;
 }
-.facebook-img
-{
-    width: 17px;
-    height: 32.88px;
-    background-image:url(/images/facebook.svg)
+.header-btn:hover {
+  background: #a9a32a;
 }
-.container-social
-{
-    margin-top: 328px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+.instagram-img {
+  width: 29.52px;
+  height: 32.36px;
+  background-image: url(/images/instagram.svg);
+}
+.telegram-img {
+  width: 30px;
+  height: 24.12px;
+  background-image: url(/images/telegram.svg);
+}
+.whats-up-img {
+  width: 29.52px;
+  height: 32.36px;
+  background-image: url(/images/whatsapp.svg);
+}
+.facebook-img {
+  width: 17px;
+  height: 32.88px;
+  background-image: url(/images/facebook.svg);
+}
+.container-social {
+  margin-top: 328px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }

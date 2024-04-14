@@ -1,12 +1,23 @@
 @keyframes slide-up-moon {
-    0% { transform: translateY(30px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes slide-up-sun {
-    0% { transform: translateY(-30px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-.menu:hover
-{
-    background-color: #948F8F;
+.menu:hover {
+  background-color: #948f8f;
 }
