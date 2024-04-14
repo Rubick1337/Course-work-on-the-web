@@ -107,6 +107,7 @@ body {
   background: url(/images/flag-usa-icon.png) no-repeat left center;
 }
 .header-container {
+    position: relative;
   height: 947px;
   width: 100%;
   background-image: url(/images/фон.jpg);
@@ -204,8 +205,13 @@ body {
   background-image: url(/images/facebook.svg);
 }
 .container-social {
-  margin-top: 328px;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 166px;
+    left: 50%;
+    bottom: 0;
   display: flex;
   gap: 20px;
   justify-content: center;
+  align-items: center;
 }
