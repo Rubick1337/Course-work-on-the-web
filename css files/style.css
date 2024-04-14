@@ -82,6 +82,7 @@ body {
     cursor:pointer;
     position: relative;
     border:none;
+    background-position:left;
 }
 .dropbtn::after
 {
@@ -110,10 +111,6 @@ body {
     transition: background-color 0.5s ease-in-out;
     border: 0px;
     cursor: pointer;
-}
-.dropdown-content a:hover
-{
-    background-color: #f1f1f1;
 }
 .dropdown-content button:first-child
 {
@@ -173,3 +170,37 @@ body {
     margin-block: 0;
     padding-inline-start: 0;
   }
+  .Text-header
+  {
+    margin-top: 84px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .consultation
+  {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-btn{
+    display: block;
+    color:#fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  
+    position: relative;
+
+}
+.header-btn::after{
+    display: inline-block;
+    content: url(/images/Arrow3.svg) ;
+    padding: 40px 0 0 27px;
+}
+.header-btn:hover{
+ background: #A9A32A;
+}
