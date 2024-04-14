@@ -192,7 +192,7 @@ body {
     border-radius: 50%;
     width: 100px;
     height: 100px;
-  
+    transition: background 0.5s ease-in-out;
     position: relative;
 
 }
@@ -203,4 +203,35 @@ body {
 }
 .header-btn:hover{
  background: #A9A32A;
+}
+.instagram-img
+{
+    width: 29.52px;
+    height: 32.36px;
+    background-image:url(/images/instagram.svg)
+}
+.telegram-img
+{
+    width: 30px;
+    height: 24.12px;
+    background-image:url(/images/telegram.svg)
+}
+.whats-up-img
+{
+    width: 29.52px;
+    height: 32.36px;
+    background-image:url(/images/whatsapp.svg)
+}
+.facebook-img
+{
+    width: 17px;
+    height: 32.88px;
+    background-image:url(/images/facebook.svg)
+}
+.container-social
+{
+    margin-top: 328px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
