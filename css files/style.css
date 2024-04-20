@@ -215,3 +215,50 @@ body {
   justify-content: center;
   align-items: center;
 }
+.services
+{
+  height: 961px;
+}
+.center
+{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.container-services
+{
+  width: 1199px;
+height: 763px;
+display: flex;
+gap: 88px;
+}
+.right
+{
+  align-self: end;
+}
+.left
+{
+  gap: 59px;
+}
+.img-services
+{
+  background-image:url(/images/Rectangle7.jpg);
+  width: 600px;
+  height: 670px;
+}
+.text-1
+{
+  width: 510px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.flex-direction
+{
+  display: flex;
+  flex-direction: column;
+}
+.title-services
+{
+  margin-top: 8px;
+}
